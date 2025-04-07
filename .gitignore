@@ -1,0 +1,14 @@
+.gradle/
+build/
+bin/
+
+
+*.log
+*.tmp
+*.swp
+*.bak
+.DS_Store
+Thumbs.db
+
+!gradle/wrapper/ 
+

@@ -30,7 +30,10 @@ public class MyApplication {
         return array;
     }
 
-    @PostMapping()
+    @PostMapping("/array")
+    void test(int value){
+        array.add(value);
+    }
 
     public static void main(String[] args) {
         SpringApplication.run(MyApplication.class, args);

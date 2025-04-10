@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 
 @RestController
 @SpringBootApplication
@@ -31,8 +32,8 @@ public class MyApplication {
     }
 
     @PostMapping("/array")
-    void test(int value){
-        array.add(value);
+    void test(@RequestBody int value){
+        array[0]=value;
     }
 
     public static void main(String[] args) {
